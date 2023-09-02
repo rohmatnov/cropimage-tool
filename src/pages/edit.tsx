@@ -160,18 +160,16 @@ const EditPage: FC<PageProps> = () => {
                   <Cropper
                     src={src}
                     className="shadow-md shadow-slate-950/40 mx-auto max-w-full"
-                    guides={false}
                     crop={onCrop}
                     ref={cropperRef}
                     zoomOnWheel={false}
                     zoomOnTouch={false}
                     zoomable={false}
                     restore={true}
-                    viewMode={1}
+                    viewMode={0}
                     scaleX={1}
                     scaleY={1}
                     highlight={false}
-                    scalable={false}
                   />
                 ) : (
                   <div>Loading...</div>
